@@ -1,0 +1,58 @@
+/* components/Tooltip.module.css */
+.Tooltip_tooltipContainer__eZmV_ {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  overflow: visible;
+  height: 25px;
+}
+
+.Tooltip_tooltip__kJcYw {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 24px;
+  border-radius: 4px;
+  max-width: 550px;
+  overflow: visible;
+  width: 100%;
+  min-width: 370px;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.5s,
+    visibility 0.5s;
+}
+
+.Tooltip_tooltipContainer__eZmV_:hover .Tooltip_tooltip__kJcYw,
+.Tooltip_tooltipContainer__eZmV_:focus .Tooltip_tooltip__kJcYw,
+.Tooltip_tooltipContainer__eZmV_:active .Tooltip_tooltip__kJcYw {
+  opacity: 1;
+  visibility: visible;
+}
+
+.About2_list__LkKOi {
+  max-height: 500px; /* adjust based on the content height */
+  overflow: visible;
+  transition: max-height 0.5s ease;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 15px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.About2_collapsed__2jR1R {
+  max-height: -moz-min-content;
+  max-height: min-content;
+}
+.About2_list__LkKOi i {
+  color: #9e67b8;
+  margin-right: 5px;
+}
+

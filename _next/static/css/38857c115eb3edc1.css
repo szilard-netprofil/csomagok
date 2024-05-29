@@ -1,0 +1,17 @@
+@keyframes modal-video {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes modal-video-inner {
+  from {
+    transform: translate(0, 100px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
